@@ -5,12 +5,6 @@
         https://test.hugorickx.tech
 
 -----------
------------
------------
------------
------------
------------
------------
 
 ### Avoir toutes les equipes
 
@@ -26,12 +20,6 @@
 Toutes les equipes avec leur nom et leur id
 
 -----------
------------
------------
------------
------------
------------
------------
 
 ### Avoir toutes les activites
 
@@ -46,12 +34,6 @@ Toutes les equipes avec leur nom et leur id
 #### Return:
 Toutes les activites d'une equipe et les status pour chaque activite.
 
------------
------------
------------
------------
------------
------------
 -----------
 
 ### Avoir toutes les activites
@@ -70,12 +52,6 @@ Toutes les activites d'une equipe et les status pour chaque activite.
 Toutes les activites d'une equipe et les status pour chaque activite limite a un type.
 
 -----------
------------
------------
------------
------------
------------
------------
 
 ### Avoir toutes les activites
 
@@ -90,12 +66,6 @@ Toutes les activites d'une equipe et les status pour chaque activite limite a un
 #### Return:
 Tous les tutos d'un type.
 
------------
------------
------------
------------
------------
------------
 -----------
 
 ### Avoir toutes les activites
@@ -112,12 +82,6 @@ Tous les tutos d'un type.
 Tous les tutos.
 
 -----------
------------
------------
------------
------------
------------
------------
 
 ### Avoir toutes les activites
 
@@ -132,12 +96,6 @@ Tous les tutos.
 #### Return:
 Tous les enfants d'un groupe
 
------------
------------
------------
------------
------------
------------
 -----------
 
 ### Avoir toutes les activites
