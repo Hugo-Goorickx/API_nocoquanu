@@ -1,64 +1,158 @@
-# API
-<p align="center">
-  <a href="#en-premier">En premier</a> •
-  <a href="#comment-l-utiliser">Comment l'utiliser</a> •
-  <a href="#fabrique-avec">Fabriqué avec</a> •
-  <a href="#auteurs">Auteurs</a> •
-  <a href="#notes-de-projets">Notes de projets</a> 
-</p>
 
+## API Reference
 
+    Principal lien :
+        https://test.hugorickx.tech
 
-API sommaire utilisee pour un projet de Hackathon
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
 
-## Comment l utiliser
+### Avoir toutes les equipes
 
-https://test.hugoorickx.tech
+```http
+  GET /gro/all
+```
 
-     Lien de base
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| - | - | - |
 
-/gro/all
+#### Return:
+Toutes les equipes avec leur nom et leur id
 
-    Donne toutes les equipes avec leurs noms
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
 
-/act/{$id}/all
+### Avoir toutes les activites
 
-     $id (string) = id groupe "blabla1"
-     Toutes les activites liees au groupe
-     Nom, type et le status
+```http
+  GET /act/{$id}/all
+```
 
-/act/{$id}/{$id_act}
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| $id | String | Id complete d'un groupe |
 
-     $id (string) = id groupe "blabla1"
-     $id_act (int) = id type
-     Toutes les activite liee au groupe et au type 
-     L'ID, le nom et le status
+#### Return:
+Toutes les activites d'une equipe et les status pour chaque activite.
 
-/enc/{$id_type}
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
 
-     $id_type (int)
-     Tous les tutos lies au type
-     ID_ency, nom et le tuto
+### Avoir toutes les activites
 
-/enc/all
+```http
+  GET /act/{$id}/{$id_act}
+```
 
-      Tous les tutos sans distinction
-      ID_ency, nom, tuto
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| $id | String | Id complete d'un groupe |
+| :-------- | :------- | :------------------------- |
+| $id_act | int | Id d'un type |
 
+#### Return:
+Toutes les activites d'une equipe et les status pour chaque activite limite a un type.
 
-/chi/{$id_group}
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
 
-      $id_groupe (int)
-      Retourne tous les enfants d'un groupe
-      Nom
+### Avoir toutes les activites
 
-/con/{$name}/{$mdp}
+```http
+  GET /enc/{$id_type}
+```
 
-      $name (string) = nom du groupe
-      $mdp (string) = mdp du groupe
-      Retourne l'id complet du groupe pour les prochaines requetes
-      Id groupe
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| $id_type | int | Id d'un type |
 
+#### Return:
+Tous les tutos d'un type.
+
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
+
+### Avoir toutes les activites
+
+```http
+  GET /enc/all
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| - | - | - |
+
+#### Return:
+Tous les tutos.
+
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
+
+### Avoir toutes les activites
+
+```http
+  GET /chi/{$id_group}
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| $id_group | String | Id complete d'un groupe |
+
+#### Return:
+Tous les enfants d'un groupe
+
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
+-----------
+
+### Avoir toutes les activites
+
+```http
+  GET /con/{$name}/{$mdp}
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| $name | String | Nom simple du groupe |
+| $mdp | String | Mot de passe du groupe |
+
+#### Return:
+L'id complet du groupe
 ## Auteurs
 Moi
 ## Notes de projets
