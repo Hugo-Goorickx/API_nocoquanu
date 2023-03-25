@@ -13,7 +13,7 @@ API sommaire utilisee pour un projet de Hackathon
 
 ## Comment l utiliser
 
-https://hugoorickx.tech
+https://test.hugoorickx.tech
 
      Lien de base
 
