@@ -25,7 +25,7 @@ class group
     public function all()
     {
         try {
-            return json_gen(true, createRequest("SELECT nom FROM `Groups` WHERE 1;"));
+            return json_gen(true, createRequest("SELECT nom, ID_log FROM `Groups` WHERE 1;"));
         } catch (\Exception $e) { return json_gen(false, $e->getCode() . $e->getMessage()); }
     }
 
