@@ -6,7 +6,9 @@ function createRequest($request)
 {
     try                 
     { 
-        $bdd = new \PDO('mysql:host=127.0.0.1;dbname=bouh', 'root', '');
+//        $bdd = new \PDO('mysql:host=127.0.0.1;dbname=bouh', 'root', '');
+        $bdd = new \PDO('mysql:host=hugoorickx.be:3306;dbname=u716273791_nocoquanu', 'u716273791_user', 'K3orOZDj38b^');
+
         $ps= $bdd->prepare($request);
         $ps->execute();
         return $ps->fetchAll(\PDO::FETCH_ASSOC);
