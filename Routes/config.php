@@ -9,7 +9,7 @@ $router->get('/act/{$id}/all', function ($id) use ($controller) {
     echo $controller->all_acts($id);
 });
 
-$router->get('/act/all', function () use ($controller) {
+$router->get('/gro/all', function () use ($controller) {
     echo $controller->all();
 });
 
