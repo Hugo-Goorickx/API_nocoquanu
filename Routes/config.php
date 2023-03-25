@@ -9,6 +9,10 @@ $router->get('/act/{$id}/all', function ($id) use ($controller) {
     echo $controller->all_acts($id);
 });
 
+$router->get('/act/all', function () use ($controller) {
+    echo $controller->all();
+});
+
 $router->get('/act/{$id}/{$id_act}', function ($id, $id_act) use ($controller) {
     echo $controller->one_act($id, $id_act);
 });

@@ -22,6 +22,13 @@ class group
         } catch (\Exception $e) { return json_gen(false, $e->getCode() . $e->getMessage()); }
     }
 
+    public function all()
+    {
+        try {
+            return json_gen(true, createRequest("SELECT nom FROM `Groups` WHERE 1;"));
+        } catch (\Exception $e) { return json_gen(false, $e->getCode() . $e->getMessage()); }
+    }
+
     public function one_act($id_group, $id_acti)
     {
         $parts = preg_split("/(\d+)/", $id_group, -1, PREG_SPLIT_DELIM_CAPTURE);
