@@ -12,6 +12,15 @@
 API sommaire utilisee pour un projet de Hackathon
 
 ## Comment l utiliser
+
+https://hugoorickx.tech
+
+     Lien de base
+
+/gro/all
+
+    Donne toutes les equipes avec leurs noms
+
 /act/{$id}/all
 
      $id (string) = id groupe "blabla1"
