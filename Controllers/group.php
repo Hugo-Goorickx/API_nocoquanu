@@ -63,7 +63,7 @@ class group
     public function child($id_group)
     {
         try {
-            return json_gen(true, createRequest("SELECT Nom FROM `Enfants` WHERE ID_log = '$id_group';"));
+            return json_gen(true, createRequest("SELECT Enfants.Nom AS enfant_nom, Groups.nom AS groupe_nom FROM Enfants INNER JOIN Groups ON Enfants.ID_log = Groups.ID_log WHERE Groups.ID_log = '$id_group';"));
         } catch (\Exception $e) { return json_gen(false, $e->getCode() . $e->getMessage()); }
     }
 
