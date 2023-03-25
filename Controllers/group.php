@@ -17,7 +17,7 @@ class group
             return json_gen(true, createRequest("SELECT Actis.nom AS activite_nom, Types.nom AS type_nom, Act_Stat.Status 
                                                     FROM Actis 
                                                     INNER JOIN Act_Stat ON Actis.ID_act = Act_Stat.ID_act 
-                                                    INNER JOIN Types ON Actis.ID_type = types.ID_type 
+                                                    INNER JOIN Types ON Actis.ID_type = Types.ID_type 
                                                     WHERE Act_Stat.ID_group = $id;"));
         } catch (\Exception $e) { return json_gen(false, $e->getCode() . $e->getMessage()); }
     }
