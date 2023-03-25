@@ -45,7 +45,6 @@ Toutes les activites d'une equipe et les status pour chaque activite.
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | $id | String | Id complete d'un groupe |
-| :-------- | :------- | :------------------------- |
 | $id_act | int | Id d'un type |
 
 #### Return:
